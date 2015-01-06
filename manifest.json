@@ -1,0 +1,27 @@
+{
+   "manifest_version": 2,
+   "minimum_chrome_version": "34",
+   "name": "Buaiti screen share",
+   "permissions": [ "desktopCapture" ],
+   "short_name": "buaiti screen share",
+   "update_url": "https://www.buaiti.com/update/chrome-extension",
+   "version": "0.0.0.1",
+
+   "background": {
+      "persistent": true,
+      "scripts": [ "script.js" ]
+   },
+   "description": "buaiti screen share plugin.",
+   "externally_connectable": {
+      "matches": [ "*://*.buaiti.com:*/*"]
+   },
+   "icons": {
+      "128": "buaiti.png",
+      "16": "buaiti.png",
+      "48": "buaiti.png"
+   },
+   "browser_action":{
+     "default_icon": "buaiti.png"
+   }
+}
+
